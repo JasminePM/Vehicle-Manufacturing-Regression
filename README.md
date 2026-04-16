@@ -17,13 +17,6 @@ Several limitations influenced the scope of this analysis. The datasets used, pa
 ### Future Iterations
 Future work could improve this analysis by incorporating additional variables that better capture accident risk. Geographic location, vehicle age distributions, driver behavior, and recall severity could all provide deeper insight into fatality patterns. Further experimentation with additional machine learning models and feature engineering may also reveal more nuanced relationships within the data. Expanding the dataset and running models across different feature combinations would help strengthen the robustness of the findings and provide a more comprehensive understanding of factors influencing driver fatalities.
 
-## Collaboration Structure 
-This was a two-person collaborative project completed as part of a CISC 5380 cumulative final. Contirbutors include Paige Mitchell and Lily Bryan. 
-
-Various responsibilities divided to ensure both team members contributed distinct technical components to the final analysis. Lily focused primarily on the data engineering and preprocessing stages of the project. This included cleaning and integrating multiple transportation datasets, standardizing manufacturer naming conventions across sources, and constructing a unified dataset for analysis. She also implemented the manufacturer mapping process, accounted for recall time-lag effects, and created the Cars on the Road (COR) proxy variable, which helped normalize fatality counts relative to vehicle exposure. Additionally, she applied K-means clustering to identify structural groupings among manufacturers based on recall counts and fatality metrics.
-
-Paige’s contributions focused on the statistical modeling and analytical interpretation of the processed data. She implemented and evaluated several statistical methods including Pearson’s correlation analysis, Multiple Linear Regression (MLR), and Simple Linear Regression (SLR) using Python libraries such as Pandas, SciPy, and Scikit-learn. Through these models, she examined the relationship between recall frequency, vehicle exposure, and fatality rates, and compared predictive performance across regression approaches. Paige also interpreted the results of these models, assessed their statistical significance, and synthesized the overall findings to determine whether recalls meaningfully predict fatal accident outcomes.
-
 ## Data Sources
 
 Two primary national transportation datasets were used:
